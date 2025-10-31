@@ -130,6 +130,18 @@ fun FormDataDiri(modifier: Modifier
             modifier = Modifier
                 .height(100.dp)
                 .fillMaxWidth(0.95f)
-        )
+        ) {
+            Column(
+                modifier = Modifier
+                    .padding(horizontal = 16.dp, vertical = 10.dp)
+                    .fillMaxSize(),
+                verticalArrangement = Arrangement.SpaceAround
+            ) {
+
+                Text(text = "Nama   : $nama", color = Color.White)
+                Text(text = "Gender : $jenis", color = Color.White)
+                Text(text = "Alamat : $alamat", color = Color.White)
+            }
+        }
     }
 }
