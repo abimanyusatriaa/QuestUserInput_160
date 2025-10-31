@@ -16,5 +16,10 @@ fun FormDataDiri(modifier: Modifier
     var textAlamat by remember {mutableStateOf("")}
     var textJK by remember {mutableStateOf("")}
 
+    //variabel yg menyimpan data dari komponen ui
+    var nama by remember {mutableStateOf("")}
+    var alamat by remember {mutableStateOf("")}
+    var jenis by remember {mutableStateOf("")}
+
 
 }
