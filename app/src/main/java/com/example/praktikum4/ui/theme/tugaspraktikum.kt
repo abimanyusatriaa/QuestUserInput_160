@@ -23,5 +23,11 @@ fun Tugas(modifier: Modifier = Modifier) {
     var gender: List<String> = listOf("Laki-laki", "Perempuan")
     var statusPerkawinan: List<String> = listOf("Janda", "Lajang", "Duda")
 
-
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(top = 35.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Top
+    )
 }
