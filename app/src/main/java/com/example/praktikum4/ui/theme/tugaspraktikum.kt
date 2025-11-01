@@ -98,6 +98,28 @@ fun Tugas(modifier: Modifier = Modifier) {
                     text = "Status Perkawinan",
                     fontWeight = FontWeight.SemiBold
                 )
+                Column(
+                    verticalArrangement = Arrangement.spacedBy(4.dp)
+                ) {
+                    statusPerkawinan.forEach { item ->
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .selectable(
+                                    selected = textStatus == item,
+                                    onClick = { textStatus = item }
+                                )
+                                .padding(vertical = 2.dp)
+                        ) {
+                            RadioButton(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            )
+                            Text(item)
+                        }
+                    }
+                }
 
     }
 }
