@@ -148,6 +148,11 @@ fun Tugas(modifier: Modifier = Modifier) {
                 }
             }
         }
-
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.LightGray)
+                .padding(top = 10.dp)
+        )
     }
 }
