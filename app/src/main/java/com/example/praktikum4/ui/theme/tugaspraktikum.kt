@@ -72,6 +72,28 @@ fun Tugas(modifier: Modifier = Modifier) {
                     fontWeight = FontWeight.SemiBold,
                     modifier = Modifier.padding(top = 8.dp)
                 )
+                Column(
+                    verticalArrangement = Arrangement.spacedBy(4.dp)
+                ) {
+                    gender.forEach { item ->
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .selectable(
+                                    selected = textJK == item,
+                                    onClick = { textJK = item }
+                                )
+                                .padding(vertical = 2.dp)
+                        ) {
+                            RadioButton(
+                                selected = textJK == item,
+                                onClick = { textJK = item }
+                            )
+                            Text(item)
+                        }
+                    }
+                }
 
     }
 }
