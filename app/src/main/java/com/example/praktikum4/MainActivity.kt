@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.praktikum4.ui.theme.FormDataDiri
 import com.example.praktikum4.ui.theme.Praktikum4Theme
+import com.example.praktikum4.ui.theme.Tugas
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Praktikum4Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    FormDataDiri(
+                    Tugas(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
