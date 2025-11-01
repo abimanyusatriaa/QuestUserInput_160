@@ -20,5 +20,8 @@ fun Tugas(modifier: Modifier = Modifier) {
     var textJK by remember { mutableStateOf("") }
     var textStatus by remember { mutableStateOf("") }
 
+    var gender: List<String> = listOf("Laki-laki", "Perempuan")
+    var statusPerkawinan: List<String> = listOf("Janda", "Lajang", "Duda")
+
 
 }
