@@ -45,6 +45,13 @@ fun Tugas(modifier: Modifier = Modifier) {
                 fontSize = 22.sp
             )
         }
-
+        Card(
+            shape = RoundedCornerShape(20.dp),
+            elevation = CardDefaults.cardElevation(10.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.White),
+            modifier = Modifier
+                .fillMaxWidth(0.9f)
+                .padding(top = 19.dp, bottom = 28.dp)
+        )
     }
 }
