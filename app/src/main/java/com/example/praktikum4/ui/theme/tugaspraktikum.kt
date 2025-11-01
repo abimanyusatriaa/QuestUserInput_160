@@ -52,6 +52,21 @@ fun Tugas(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxWidth(0.9f)
                 .padding(top = 19.dp, bottom = 28.dp)
-        )
+        )   {
+            Column(
+                modifier = Modifier.padding(20.dp),
+                verticalArrangement = Arrangement.spacedBy(7.dp)
+            ) {
+                Text(
+                    text = "NAMA LENGKAP",
+                    fontWeight = FontWeight.SemiBold
+                )
+                OutlinedTextField(
+                    value = textNama,
+                    onValueChange = { textNama = it },
+                    label = { Text("Nama Lengkap") },
+                    modifier = Modifier.fillMaxWidth()
+                )
+
     }
 }
