@@ -67,6 +67,11 @@ fun Tugas(modifier: Modifier = Modifier) {
                     label = { Text("Nama Lengkap") },
                     modifier = Modifier.fillMaxWidth()
                 )
+                Text(
+                    text = "Jenis Kelamin",
+                    fontWeight = FontWeight.SemiBold,
+                    modifier = Modifier.padding(top = 8.dp)
+                )
 
     }
 }
