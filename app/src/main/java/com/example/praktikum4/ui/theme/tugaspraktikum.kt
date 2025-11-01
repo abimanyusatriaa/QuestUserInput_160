@@ -124,6 +124,12 @@ fun Tugas(modifier: Modifier = Modifier) {
                     text = "ALAMAT",
                     fontWeight = FontWeight.SemiBold
                 )
+                OutlinedTextField(
+                    value = textAlamat,
+                    onValueChange = { textAlamat = it },
+                    label = { Text("Alamat") },
+                    modifier = Modifier.fillMaxWidth()
+                )
 
     }
 }
