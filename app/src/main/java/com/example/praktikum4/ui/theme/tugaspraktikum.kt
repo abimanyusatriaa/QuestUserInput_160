@@ -120,6 +120,10 @@ fun Tugas(modifier: Modifier = Modifier) {
                         }
                     }
                 }
+                Text(
+                    text = "ALAMAT",
+                    fontWeight = FontWeight.SemiBold
+                )
 
     }
 }
