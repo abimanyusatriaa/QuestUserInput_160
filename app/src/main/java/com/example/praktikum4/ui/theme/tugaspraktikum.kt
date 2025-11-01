@@ -94,6 +94,10 @@ fun Tugas(modifier: Modifier = Modifier) {
                         }
                     }
                 }
+                Text(
+                    text = "Status Perkawinan",
+                    fontWeight = FontWeight.SemiBold
+                )
 
     }
 }
