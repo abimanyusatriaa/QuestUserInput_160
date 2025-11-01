@@ -138,6 +138,16 @@ fun Tugas(modifier: Modifier = Modifier) {
                         .height(50.dp),
                     shape = RoundedCornerShape(20.dp),
                     colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
-                )
+                ) {
+                    Text(
+                        text = "Submit",
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp
+                    )
+                }
+            }
+        }
+
     }
 }
